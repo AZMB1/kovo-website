@@ -1078,7 +1078,7 @@ export default function Home() {
 
       {/* Services Section - Style 2: Split Description */}
       <section 
-        className="relative z-10 py-32 px-6 bg-dark-primary section-fade-top section-fade-bottom"
+        className="relative z-10 py-32 px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-32 bg-dark-primary section-fade-top section-fade-bottom"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           backgroundRepeat: 'repeat',
@@ -1504,7 +1504,7 @@ export default function Home() {
 
       {/* Portfolio Showcase Section - Bento Grid */}
       <section 
-        className="relative z-10 py-24 md:py-32 px-6 bg-dark-primary section-fade-top section-fade-bottom overflow-hidden"
+        className="relative z-10 py-24 md:py-32 px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-32 bg-dark-primary section-fade-top section-fade-bottom overflow-hidden"
         aria-labelledby="portfolio-heading"
       >
         <div className="max-w-7xl mx-auto">
@@ -1821,6 +1821,131 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer - Linear Style */}
+      <footer className="relative z-10 border-t border-[#23252a] bg-[#08090a]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-14 md:py-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-8">
+            {/* Logo Column */}
+            <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
+              <a href="/" className="flex items-center gap-2 w-fit">
+                <div className="w-8 h-8 bg-[#f7f8f8] rounded-md flex items-center justify-center">
+                  <span className="text-[#08090a] font-bold text-base">K</span>
+                </div>
+                <span className="text-[#f7f8f8] font-[590] text-[17px]">KOVO</span>
+              </a>
+            </div>
+
+            {/* Company Column */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#f7f8f8] text-[13px] font-[590] tracking-tight">Company</h3>
+              <ul className="flex flex-col gap-3">
+                <li>
+                  <a href="/about" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="/work" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a href="/services" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal Column */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#f7f8f8] text-[13px] font-[590] tracking-tight">Legal</h3>
+              <ul className="flex flex-col gap-3">
+                <li>
+                  <a href="/privacy" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="/terms" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="/cookies" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Resources Column */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#f7f8f8] text-[13px] font-[590] tracking-tight">Resources</h3>
+              <ul className="flex flex-col gap-3">
+                <li>
+                  <a href="/blog" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="/faq" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="/careers" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Careers
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Connect Column */}
+            <div className="flex flex-col gap-4">
+              <h3 className="text-[#f7f8f8] text-[13px] font-[590] tracking-tight">Connect</h3>
+              <ul className="flex flex-col gap-3">
+                <li>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    X (Twitter)
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" className="text-[#888] text-[13px] font-[450] hover:text-[#f7f8f8] transition-colors">
+                    Dribbble
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="mt-16 pt-8 border-t border-[#23252a] flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-[#888] text-[12px] font-[450]">
+              © {new Date().getFullYear()} KOVO Design Agency. All rights reserved.
+            </p>
+            <p className="text-[#888] text-[12px] font-[450]">
+              Made with ❤️ in your city
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
